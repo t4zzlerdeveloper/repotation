@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import repoLogo from '/repotation.png'
 import axios from 'axios';
 
+import back from './assets/back.jpg'
+
 function App() {
 
   const [url,setURL] = useState("");
@@ -45,7 +47,7 @@ function App() {
 
   return (
     <>
-      <div className='main-page'>
+      <div className='main-page' style={{ backgroundImage: 'url(' + back + ')', backgroundSize: 'cover' }}>
         <img src={repoLogo} className='logo'/>
 
         <section className='card search-bar'>
