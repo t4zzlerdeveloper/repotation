@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import viteLogo from '/vite.svg'
+import repoLogo from '/repotation.png'
 import axios from 'axios';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
   return (
     <>
       <div className='main-page'>
-        <h1>repotation</h1>
+        <img src={repoLogo} className='logo'/>
 
         <section className='card search-bar'>
           <input className={""} placeholder={"Enter GitHub URL or Repo Name"} value={url} onChange={(e)=>{setURL(e.target.value)}} />

@@ -50,6 +50,12 @@ button,input{
 }
 
 
+.logo{
+  width: 300px;
+  filter:drop-shadow(0 0 26px purple);
+}
+
+
 .card{
   width: 80vw;
   max-width: 700px;
